@@ -13,6 +13,8 @@ namespace Entity
         public string Nombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
+        public int Identificacion { get; set; }
+        public string TipoIdentificacion { get; set; }
         public int? Edad { get; set; }
         public DateTime FechaNacimiento { get; set; }
     }
