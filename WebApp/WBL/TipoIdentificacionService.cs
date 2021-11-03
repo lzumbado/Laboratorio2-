@@ -16,7 +16,7 @@ namespace WBL
         Task<TipoIdentificacionEntity> GetById(TipoIdentificacionEntity entity);
         Task<DBEntity> Update(TipoIdentificacionEntity entity);
     }
-    public class TipoIdentificacionService
+    public class TipoIdentificacionService : ITipoIdentificacionService
     {
         private readonly IDataAccess sql;
 
@@ -142,4 +142,4 @@ namespace WBL
 
     }
 }
-}
+

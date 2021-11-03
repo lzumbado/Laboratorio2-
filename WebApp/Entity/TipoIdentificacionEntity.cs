@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class TipoIdentificacionEntity    {
+    public class TipoIdentificacionEntity    {
 
         public int? IdTipoIdentificacion { get; set; }
 
