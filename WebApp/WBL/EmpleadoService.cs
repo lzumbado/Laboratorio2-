@@ -77,6 +77,8 @@ namespace WBL
                     entity.Nombre,
                     entity.PrimerApellido,
                     entity.SegundoApellido,
+                    entity.Identificacion,
+                    entity.TipoIdentificacion,
                     entity.Edad,
                     entity.FechaNacimiento
 
@@ -105,6 +107,8 @@ namespace WBL
                     entity.Nombre,
                     entity.PrimerApellido,
                     entity.SegundoApellido,
+                    entity.Identificacion,
+                    entity.TipoIdentificacion,
                     entity.Edad,
                     entity.FechaNacimiento
 
