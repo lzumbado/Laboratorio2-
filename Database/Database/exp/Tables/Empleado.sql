@@ -4,6 +4,8 @@
   , Nombre VARCHAR(50) NOT NULL 
   , PrimerApellido VARCHAR(50) NOT NULL
   , SegundoApellido VARCHAR(50) NOT NULL
+  , Identificacion INT NOT NULL
+  , TipoIdentificacion VARCHAR(50) NOT NULL
   , Edad INT NOT NULL
   , FechaNacimiento DATETIME NOT NULL
 )
