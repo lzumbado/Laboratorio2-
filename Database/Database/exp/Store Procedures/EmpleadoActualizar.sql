@@ -3,6 +3,8 @@
 	@Nombre varchar(50),
 	@PrimerApellido varchar(50),
 	@SegundoApellido varchar(50),
+	@Identificacion int,
+	@TipoIdentificacion varchar(50),
 	@Edad int, 
 	@FechaNacimiento Datetime
 
@@ -18,6 +20,8 @@ SET NOCOUNT ON
 	Nombre= @Nombre,
 	 PrimerApellido=@PrimerApellido,
 	 SegundoApellido=@SegundoApellido,
+	 Identificacion=@Identificacion,
+	 TipoIdentificacion=@TipoIdentificacion,
 	 Edad= @Edad,
 	 FechaNacimiento=@FechaNacimiento
 	WHERE 

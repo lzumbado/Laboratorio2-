@@ -8,6 +8,8 @@ AS BEGIN
      E.Nombre,
      E.PrimerApellido,
      E.SegundoApellido,
+     E.Identificacion,
+     E.TipoIdentificacion,
      E.Edad,
      E.FechaNacimiento    
     FROM EXP.Empleado E
