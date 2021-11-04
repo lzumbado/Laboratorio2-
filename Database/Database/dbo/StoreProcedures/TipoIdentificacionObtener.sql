@@ -4,6 +4,7 @@ AS BEGIN
   SET NOCOUNT ON
 
   SELECT 
+    E.IdTipoIdentificacion,
     E.Descripcion    
     FROM dbo.TipoIdentificacion E
     WHERE
