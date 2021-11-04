@@ -11,18 +11,18 @@ VALUES
 
 
 ----ACTUALIZAR DATOS---
-UPDATE P SET
-  P.Descripcion= TM.Descripcion
-FROM Dbo.#TipoIdentificacion P
+UPDATE T SET
+  T.Descripcion= TM.Descripcion
+FROM Dbo.TipoIdentificacion T
 INNER JOIN #TipoIdentificacionTemp TM
-    ON P.IdTipoIdentificacion= TM.IdTipoIdentificacion
+    ON T.IdTipoIdentificacion= TM.IdTipoIdentificacion
 
 
 ----INSERTAR DATOS---
 
 SET IDENTITY_INSERT dbo.TipoIdentificacion ON
 
-INSERT INTO dbo.#TipoIdentificacion(
+INSERT INTO dbo.TipoIdentificacion(
 IdTipoIdentificacion, Descripcion)
 SELECT
 IdTipoIdentificacion, Descripcion
@@ -32,7 +32,7 @@ FROM #TipoIdentificacionTemp
 EXCEPT
 SELECT
 IdTipoIdentificacion, Descripcion
-FROM dbo.#TipoIdentificacion
+FROM dbo.TipoIdentificacion
 
 
 SET IDENTITY_INSERT dbo.TipoIdentificacion OFF
