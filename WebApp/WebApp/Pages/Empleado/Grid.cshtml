@@ -23,6 +23,8 @@
                                 <th>Nombre</th>
                                 <th>PrimerApellido</th>
                                 <th>SegundoApellido</th>
+                                <th>Identificacion</th>
+                                <th>TipoIdentificacion</th>
                                 <th>Edad</th>
                                 <th>FechaNacimiento</th>
                                 <th>Acción</th>
@@ -31,21 +33,23 @@
                         <tboby>
                             @foreach (var item in Model.GridList)
                             {
-                                <tr>
-                                    <td>@item.IdEmpleado</td>
-                                    <td>@item.Nombre</td>
-                                    <td>@item.PrimerApellido</td>
-                                    <td>@item.SegundoApellido</td>
-                                    <td>@item.Edad</td>
-                                    <td>@item.FechaNacimiento.ToString("dd/MM/yyyy")</td>
-                                    <td>
-                                        <a class="btn btn-primary" asp-page="Edit" asp-route-id="@item.IdEmpleado"><i class='bx bx-edit-alt'></i></a>
+                            <tr>
+                                <td>@item.IdEmpleado</td>
+                                <td>@item.Nombre</td>
+                                <td>@item.PrimerApellido</td>
+                                <td>@item.SegundoApellido</td>
+                                <td>@item.Identificacion</td>
+                                <td>@item.TipoIdentificacion</td>
+                                <td>@item.Edad</td>
+                                <td>@item.FechaNacimiento.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <a class="btn btn-primary" asp-page="Edit" asp-route-id="@item.IdEmpleado"><i class='bx bx-edit-alt'></i></a>
 
-                                        <button type="button" class="btn btn-danger" onclick="EmpleadoGrid.OnClickEliminar(@item.IdEmpleado)">
-                                            <i class='bx bx-trash'></i>
-                                        </button>
-                                    </td>
-                                </tr>
+                                    <button type="button" class="btn btn-danger" onclick="EmpleadoGrid.OnClickEliminar(@item.IdEmpleado)">
+                                        <i class='bx bx-trash'></i>
+                                    </button>
+                                </td>
+                            </tr>
                             }
                         </tboby>
                     </table>
