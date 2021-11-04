@@ -76,12 +76,5 @@ namespace WebApp.Pages.Empleado
         
         }
 
-
-
-
-
-
-
-
     }
 }
